@@ -8,29 +8,44 @@
 }
 
 body {
-    background: #f5f7ff;
-    color: #333;
+    background: #f5f6ff;
+    color: #25243a;
 }
 
-/* THANH MENU */
+/* MENU */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 10%;
-    background: white;
-    box-shadow: 0 2px 10px #eee;
+    padding: 22px 10%;
+    background: #ffffff;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.06);
 }
 
-header h2 {
-    color: #6c63ff;
+.logo {
+    font-size: 25px;
+    color: #5148db;
+    letter-spacing: 1px;
+}
+
+.logo span,
+footer span {
+    color: #ff8b6a;
+}
+
+nav {
+    display: flex;
+    gap: 28px;
 }
 
 nav a {
     text-decoration: none;
     color: #333;
-    margin-left: 25px;
     font-weight: bold;
+    font-size: 15px;
     transition: 0.3s;
 }
 
@@ -40,219 +55,301 @@ nav a:hover {
 
 /* GIỚI THIỆU */
 .about {
-    min-height: 550px;
+    min-height: 570px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    padding: 60px 10%;
-    gap: 40px;
+    justify-content: space-between;
+    padding: 75px 12%;
+    gap: 50px;
+    background: linear-gradient(135deg, #f5f6ff, #e9eaff);
 }
 
 .content {
-    max-width: 550px;
+    max-width: 600px;
 }
 
-.content h3 {
-    font-size: 25px;
+.hello {
+    display: inline-block;
+    color: #6c63ff;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
 }
 
 .content h1 {
-    font-size: 45px;
-    color: #6c63ff;
-    margin: 15px 0;
+    font-size: 55px;
+    color: #5148db;
+    margin-bottom: 12px;
 }
 
 .content h2 {
     font-size: 25px;
-    margin-bottom: 15px;
+    margin-bottom: 8px;
+}
+
+.content h3 {
+    font-size: 18px;
+    color: #6c63ff;
+    margin-bottom: 22px;
 }
 
 .content p {
-    line-height: 1.8;
-    margin-bottom: 25px;
+    line-height: 1.9;
+    color: #555;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 14px 28px;
+    background: #6c63ff;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: 0.3s;
+    box-shadow: 0 5px 15px rgba(108,99,255,0.3);
+}
+
+.btn:hover {
+    background: #5148db;
+    transform: translateY(-4px);
 }
 
 /* ẢNH CÁ NHÂN */
 .image img {
-    width: 300px;
-    height: 350px;
+    width: 320px;
+    height: 380px;
     object-fit: cover;
     border-radius: 25px;
-    border: 6px solid white;
-    box-shadow: 0 5px 25px #ccc;
+    border: 7px solid white;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    transition: 0.4s;
 }
 
-/* CÁC PHẦN NỘI DUNG */
-.skill, .project, .hobby {
+.image img:hover {
+    transform: scale(1.04);
+}
+
+/* TIÊU ĐỀ CÁC PHẦN */
+.section-title {
     text-align: center;
-    padding: 60px 10%;
+    margin-bottom: 45px;
 }
 
-section h2 {
+.section-title span {
     color: #6c63ff;
-    margin-bottom: 25px;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.section-title h2 {
+    color: #5148db;
+    font-size: 32px;
+    margin: 12px 0;
+}
+
+.section-title p {
+    color: #777;
+    line-height: 1.7;
 }
 
 /* KỸ NĂNG */
+.skill {
+    padding: 85px 10%;
+}
+
 .skill-list {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    max-width: 1100px;
+    margin: auto;
 }
 
-.skill .item {
-    width: 320px;
-    min-height: 210px;
-    padding: 40px 30px;
-    border-top: 5px solid #6c63ff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.skill-item {
+    background: white;
+    padding: 35px 28px;
+    min-height: 260px;
+    border-radius: 18px;
+    border-bottom: 5px solid #6c63ff;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    transition: 0.3s;
 }
 
-.skill .item h3 {
-    color: #6c63ff;
-    font-size: 28px;
+.skill-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(108,99,255,0.15);
+}
+
+.skill-icon {
+    font-size: 35px;
     margin-bottom: 20px;
 }
 
-.skill .item p {
-    font-size: 17px;
+.skill-item h3 {
+    font-size: 25px;
+    color: #5148db;
+    margin-bottom: 15px;
+}
+
+.skill-item p {
+    color: #666;
     line-height: 1.8;
+    font-size: 15px;
+}
+
+.skill-tag {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 7px 13px;
+    background: #eeeeff;
+    color: #6c63ff;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
 }
 
 /* DỰ ÁN */
 .project {
+    padding: 85px 10%;
     background: #eef0ff;
 }
 
 .project-list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 18px;
-    max-width: 850px;
+    gap: 25px;
+    max-width: 950px;
     margin: auto;
 }
 
 .project-item {
     background: white;
-    border-radius: 12px;
+    border-radius: 16px;
     overflow: hidden;
-    box-shadow: 0 3px 12px #ddd;
+    box-shadow: 0 5px 18px rgba(0,0,0,0.07);
     transition: 0.3s;
-    text-align: left;
 }
 
 .project-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 18px #ccc;
+    transform: translateY(-7px);
+    box-shadow: 0 12px 25px rgba(81,72,219,0.15);
 }
 
 .project-item img {
     width: 100%;
-    height: 160px;
+    height: 190px;
     object-fit: cover;
     display: block;
 }
 
 .project-content {
-    padding: 18px;
+    padding: 22px;
+}
+
+.project-content span {
+    font-size: 12px;
+    font-weight: bold;
+    color: #ff896b;
+    letter-spacing: 2px;
 }
 
 .project-content h3 {
-    color: #6c63ff;
-    margin-bottom: 10px;
-    font-size: 17px;
+    color: #5148db;
+    font-size: 19px;
+    margin: 12px 0;
 }
 
 .project-content p {
-    line-height: 1.6;
-    color: #555;
+    color: #666;
     font-size: 14px;
-}
-
-/* SỞ THÍCH */
-.hobby-list {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-/* KHUNG NỘI DUNG */
-.item {
-    background: white;
-    padding: 25px 35px;
-    border-radius: 15px;
-    box-shadow: 0 3px 12px #ddd;
-    transition: 0.3s;
-}
-
-.item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 18px #ccc;
+    line-height: 1.8;
 }
 
 /* LIÊN HỆ */
 .contact {
-    background: #6c63ff;
+    padding: 85px 10%;
+    background: linear-gradient(135deg, #5148db, #8179ff);
     color: white;
-    text-align: center;
-    padding: 70px 10%;
 }
 
-.contact h2 {
-    color: white;
-    font-size: 30px;
-    margin-bottom: 20px;
+.contact .section-title span {
+    color: #ffcfb8;
 }
 
-.contact-intro {
-    line-height: 1.8;
-    margin-bottom: 35px;
+.contact .section-title h2 {
+    color: white;
+}
+
+.contact .section-title p {
+    color: #eeeeff;
 }
 
 .contact-list {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 25px;
 }
 
 .contact-item {
     background: white;
     color: #333;
-    padding: 30px 25px;
-    width: 250px;
-    border-radius: 15px;
-    box-shadow: 0 5px 15px #5148db;
+    width: 270px;
+    padding: 30px 20px;
+    text-align: center;
+    border-radius: 18px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
     transition: 0.3s;
 }
 
 .contact-item:hover {
-    transform: translateY(-7px);
+    transform: translateY(-9px);
 }
 
-.contact-item h3 {
-    color: #6c63ff;
+.contact-icon {
+    font-size: 35px;
     margin-bottom: 15px;
 }
 
+.contact-item h3 {
+    color: #5148db;
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
 .contact-item p {
-    line-height: 1.7;
+    color: #666;
+    font-size: 14px;
+    overflow-wrap: anywhere;
 }
 
 /* CHÂN TRANG */
 footer {
     text-align: center;
-    padding: 20px;
-    background: #5148db;
+    padding: 28px 15px;
+    background: #252344;
     color: white;
 }
 
-/* GIAO DIỆN ĐIỆN THOẠI */
+footer h3 {
+    font-size: 23px;
+    margin-bottom: 12px;
+}
+
+footer p {
+    color: #c8c7db;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+/* ĐIỆN THOẠI VÀ TABLET */
 @media (max-width: 768px) {
+
     header {
         flex-direction: column;
         gap: 20px;
@@ -260,24 +357,27 @@ footer {
     }
 
     nav {
-        display: flex;
         justify-content: center;
         flex-wrap: wrap;
         gap: 15px;
     }
 
     nav a {
-        margin: 0;
+        font-size: 13px;
     }
 
     .about {
         flex-direction: column-reverse;
         text-align: center;
-        padding: 40px 5%;
+        padding: 50px 6%;
     }
 
     .content h1 {
-        font-size: 35px;
+        font-size: 40px;
+    }
+
+    .content h2 {
+        font-size: 21px;
     }
 
     .image img {
@@ -286,26 +386,32 @@ footer {
         max-width: 100%;
     }
 
-    .skill, .project, .hobby {
-        padding: 45px 5%;
+    .skill,
+    .project,
+    .contact {
+        padding: 60px 6%;
     }
 
-    .skill .item {
-        width: 100%;
-        max-width: 350px;
+    .skill-list {
+        grid-template-columns: 1fr;
+    }
+
+    .skill-item {
+        min-height: auto;
     }
 
     .project-list {
         grid-template-columns: 1fr;
-        gap: 20px;
+        gap: 22px;
     }
 
     .project-item img {
-        height: 180px;
+        height: 190px;
     }
 
-    .contact {
-        padding: 45px 5%;
+    .contact-list {
+        flex-direction: column;
+        align-items: center;
     }
 
     .contact-item {
