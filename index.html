@@ -4,69 +4,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Giới thiệu bản thân</title>
+    <title>Portfolio - Lê Đình Gia</title>
     <link rel="stylesheet" href="LeDinhGia.css">
 </head>
 <body>
 
-    <!-- THANH MENU -->
+    <!-- MENU -->
     <header>
-        <h2>MY PROFILE</h2>
+        <h2 class="logo">MY PROFILE<span>.</span></h2>
+
         <nav>
             <a href="#about">Giới thiệu</a>
             <a href="#skill">Kỹ năng</a>
             <a href="#project">Dự án</a>
-            <a href="#hobby">Sở thích</a>
             <a href="#contact">Liên hệ</a>
         </nav>
     </header>
 
     <!-- GIỚI THIỆU -->
     <section class="about" id="about">
+
         <div class="content">
-            <h3>Xin chào, Tôi là</h3>
+            <span class="hello">XIN CHÀO, TÔI LÀ</span>
+
             <h1>Lê Đình Gia</h1>
-            <h2>Sinh viên 66K1 CNTT Trường Đại học Vinh</h2>
+
+            <h2>Sinh viên Công nghệ thông tin</h2>
+
+            <h3>Năm 2 - Lớp 66K1 | Trường Đại học Vinh</h3>
+
             <p>
-                Tôi là một người vui vẻ, hòa đồng và luôn thích học hỏi
-                những điều mới. Tôi luôn cố gắng hoàn thiện bản thân
-                và phát triển những kỹ năng của mình.
+                Tôi là sinh viên năm 2 ngành Công nghệ thông tin,
+                lớp 66K1 tại Trường Đại học Vinh.
+                Tôi yêu thích công nghệ, lập trình và luôn có tinh thần
+                học hỏi, sáng tạo để phát triển bản thân.
             </p>
+
+            <a href="#contact" class="btn">Liên hệ với tôi</a>
         </div>
 
         <div class="image">
-            <img src="LeDinhGia.jpg" alt="Ảnh chân dung của tôi">
+            <img src="LeDinhGia.jpg" alt="Ảnh chân dung Lê Đình Gia">
         </div>
+
     </section>
 
     <!-- KỸ NĂNG -->
     <section class="skill" id="skill">
-        <h2>Kỹ năng của tôi</h2>
+
+        <div class="section-title">
+            <span>MY ABILITIES</span>
+            <h2>Kỹ năng của tôi</h2>
+            <p>Những kiến thức và kỹ năng tôi đang học tập và phát triển.</p>
+        </div>
 
         <div class="skill-list">
 
-            <div class="item">
+            <div class="skill-item">
+                <div class="skill-icon">🌐</div>
                 <h3>HTML</h3>
                 <p>
-                    Sử dụng HTML để xây dựng cấu trúc
-                    và nội dung cho trang web.
+                    Xây dựng cấu trúc website, trình bày nội dung,
+                    hình ảnh và liên kết giữa các trang.
                 </p>
+                <span class="skill-tag">Web Development</span>
             </div>
 
-            <div class="item">
+            <div class="skill-item">
+                <div class="skill-icon">🎨</div>
                 <h3>CSS</h3>
                 <p>
-                    Sử dụng CSS để thiết kế giao diện,
-                    màu sắc và bố cục website.
+                    Thiết kế giao diện, phối màu, căn chỉnh bố cục
+                    và tạo hiệu ứng cho website.
                 </p>
+                <span class="skill-tag">Web Design</span>
             </div>
 
-            <div class="item">
+            <div class="skill-item">
+                <div class="skill-icon">💻</div>
                 <h3>C++</h3>
                 <p>
-                    Có kiến thức cơ bản về lập trình,
-                    biến, vòng lặp, hàm và cấu trúc dữ liệu.
+                    Lập trình cơ bản với biến, vòng lặp, hàm,
+                    mảng và cấu trúc dữ liệu.
                 </p>
+                <span class="skill-tag">Programming</span>
             </div>
 
         </div>
@@ -74,25 +95,34 @@
 
     <!-- DỰ ÁN -->
     <section class="project" id="project">
-        <h2>Các dự án của tôi</h2>
+
+        <div class="section-title">
+            <span>MY WORK</span>
+            <h2>Các dự án của tôi</h2>
+            <p>Một số sản phẩm và bài tập tôi đã thực hiện trong quá trình học tập.</p>
+        </div>
 
         <div class="project-list">
 
             <div class="project-item">
                 <img src="portfolio.jpg" alt="Portfolio cá nhân">
+
                 <div class="project-content">
+                    <span>PROJECT 01</span>
                     <h3>Portfolio cá nhân</h3>
                     <p>
                         Xây dựng website giới thiệu bản thân bằng HTML
                         và CSS, trình bày thông tin cá nhân, kỹ năng
-                        và sở thích.
+                        và các dự án.
                     </p>
                 </div>
             </div>
 
             <div class="project-item">
                 <img src="food.jpg" alt="Website đặt đồ ăn">
+
                 <div class="project-content">
+                    <span>PROJECT 02</span>
                     <h3>Website đặt đồ ăn trực tuyến</h3>
                     <p>
                         Thiết kế website đặt đồ ăn trực tuyến,
@@ -103,8 +133,10 @@
             </div>
 
             <div class="project-item">
-                <img src="news.jpg.png" alt="Website thông tin tin tức">
+                <img src="news.jpg" alt="Website thông tin tin tức">
+
                 <div class="project-content">
+                    <span>PROJECT 03</span>
                     <h3>Website thông tin tin tức</h3>
                     <p>
                         Sử dụng Google Sites để xây dựng website
@@ -114,13 +146,15 @@
             </div>
 
             <div class="project-item">
-                <img src="employee.jpg.png" alt="Quản lý danh sách nhân viên">
+                <img src="employee.jpg" alt="Quản lý danh sách nhân viên">
+
                 <div class="project-content">
+                    <span>PROJECT 04</span>
                     <h3>Quản lý danh sách nhân viên</h3>
                     <p>
-                        Sử dụng ngôn ngữ C++ để xây dựng chương trình
-                        quản lý nhân viên với chức năng thêm, sửa,
-                        xóa và tìm kiếm thông tin.
+                        Sử dụng C++ xây dựng chương trình quản lý
+                        nhân viên với chức năng thêm, sửa, xóa
+                        và tìm kiếm thông tin.
                     </p>
                 </div>
             </div>
@@ -128,50 +162,43 @@
         </div>
     </section>
 
-    <!-- SỞ THÍCH -->
-    <section class="hobby" id="hobby">
-        <h2>Sở thích của tôi</h2>
-
-        <div class="hobby-list">
-            <div class="item">🎵 Nghe nhạc</div>
-            <div class="item">📷 Chụp ảnh</div>
-            <div class="item">✈️ Du lịch</div>
-            <div class="item">💻 Công nghệ</div>
-        </div>
-    </section>
-
     <!-- LIÊN HỆ -->
     <section class="contact" id="contact">
-        <h2>Liên hệ với tôi</h2>
 
-        <p class="contact-intro">
-            Cảm ơn bạn đã ghé thăm website của tôi!
-            Hãy liên hệ nếu bạn muốn trao đổi và kết nối.
-        </p>
+        <div class="section-title">
+            <span>GET IN TOUCH</span>
+            <h2>Liên hệ với tôi</h2>
+            <p>Cảm ơn bạn đã ghé thăm website cá nhân của tôi!</p>
+        </div>
 
         <div class="contact-list">
 
             <div class="contact-item">
-                <h3>✉ Email</h3>
+                <div class="contact-icon">✉️</div>
+                <h3>Email</h3>
                 <p>gia23841@gmail.com</p>
             </div>
 
             <div class="contact-item">
-                <h3>🌐 Facebook</h3>
+                <div class="contact-icon">🌐</div>
+                <h3>Facebook</h3>
                 <p>Le Dinh Gia</p>
             </div>
 
             <div class="contact-item">
-                <h3>🎓 Trường học</h3>
+                <div class="contact-icon">🎓</div>
+                <h3>Trường học</h3>
                 <p>Trường Đại học Vinh</p>
             </div>
 
         </div>
+
     </section>
 
     <!-- CHÂN TRANG -->
     <footer>
-        <p>© 2026 - Website giới thiệu bản thân</p>
+        <h3>MY PROFILE<span>.</span></h3>
+        <p>© 2026 Lê Đình Gia | 66K1 CNTT - Trường Đại học Vinh</p>
     </footer>
 
 </body>
