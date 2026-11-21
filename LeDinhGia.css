@@ -83,7 +83,6 @@ nav a:hover {
     margin-bottom: 12px;
 }
 
-/* DÒNG SINH VIÊN CÙNG MÀU VỚI TÊN */
 .content h2 {
     font-size: 23px;
     color: #5148db;
@@ -157,7 +156,7 @@ nav a:hover {
 /* KỸ NĂNG */
 .skill {
     padding: 85px 8%;
-    background: #f7f4ef;
+    background: linear-gradient(135deg, #f5f6ff, #e9eaff);
 }
 
 .skill-list {
@@ -212,7 +211,7 @@ nav a:hover {
     margin-bottom: 28px;
 }
 
-/* NGÔN NGỮ / CÔNG CỤ */
+/* NGÔN NGỮ VÀ CÔNG CỤ */
 .skill-item h4 {
     font-size: 21px;
     color: #292929;
@@ -361,13 +360,14 @@ footer p {
     line-height: 1.7;
 }
 
-/* ĐIỆN THOẠI VÀ TABLET */
+/* TABLET */
 @media (max-width: 900px) {
     .skill-list {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
+/* ĐIỆN THOẠI */
 @media (max-width: 768px) {
 
     header {
