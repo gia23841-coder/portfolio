@@ -83,15 +83,12 @@ nav a:hover {
     margin-bottom: 12px;
 }
 
+/* DÒNG SINH VIÊN CÙNG MÀU VỚI TÊN */
 .content h2 {
-    font-size: 25px;
-    margin-bottom: 8px;
-}
-
-.content h3 {
-    font-size: 18px;
-    color: #6c63ff;
+    font-size: 23px;
+    color: #5148db;
     margin-bottom: 22px;
+    line-height: 1.5;
 }
 
 .content p {
@@ -159,58 +156,75 @@ nav a:hover {
 
 /* KỸ NĂNG */
 .skill {
-    padding: 85px 10%;
+    padding: 85px 8%;
+    background: #f7f4ef;
 }
 
 .skill-list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
-    max-width: 1100px;
+    gap: 35px;
+    max-width: 1250px;
     margin: auto;
 }
 
 .skill-item {
     background: white;
-    padding: 35px 28px;
-    min-height: 260px;
-    border-radius: 18px;
-    border-bottom: 5px solid #6c63ff;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    padding: 32px 38px;
+    min-height: 355px;
+    border-radius: 27px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.07);
     transition: 0.3s;
 }
 
 .skill-item:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 12px 25px rgba(108,99,255,0.15);
+    transform: translateY(-7px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.12);
 }
 
+/* BIỂU TƯỢNG KỸ NĂNG */
 .skill-icon {
-    font-size: 35px;
-    margin-bottom: 20px;
+    width: 76px;
+    height: 76px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #e6edfc;
+    color: #183d70;
+    border-radius: 50%;
+    font-size: 27px;
+    font-weight: bold;
+    margin-bottom: 18px;
 }
 
+/* TIÊU ĐỀ KỸ NĂNG */
 .skill-item h3 {
-    font-size: 25px;
-    color: #5148db;
-    margin-bottom: 15px;
+    font-size: 26px;
+    color: #183d70;
+    margin-bottom: 19px;
 }
 
+/* ĐƯỜNG KẺ */
+.skill-line {
+    width: 82px;
+    height: 5px;
+    background: #956744;
+    margin-bottom: 28px;
+}
+
+/* NGÔN NGỮ / CÔNG CỤ */
+.skill-item h4 {
+    font-size: 21px;
+    color: #292929;
+    margin-bottom: 22px;
+    line-height: 1.5;
+}
+
+/* MÔ TẢ */
 .skill-item p {
     color: #666;
+    font-size: 17px;
     line-height: 1.8;
-    font-size: 15px;
-}
-
-.skill-tag {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 7px 13px;
-    background: #eeeeff;
-    color: #6c63ff;
-    border-radius: 20px;
-    font-size: 12px;
-    font-weight: bold;
 }
 
 /* DỰ ÁN */
@@ -348,6 +362,12 @@ footer p {
 }
 
 /* ĐIỆN THOẠI VÀ TABLET */
+@media (max-width: 900px) {
+    .skill-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 @media (max-width: 768px) {
 
     header {
@@ -377,7 +397,7 @@ footer p {
     }
 
     .content h2 {
-        font-size: 21px;
+        font-size: 20px;
     }
 
     .image img {
@@ -394,10 +414,20 @@ footer p {
 
     .skill-list {
         grid-template-columns: 1fr;
+        gap: 22px;
     }
 
     .skill-item {
         min-height: auto;
+        padding: 30px;
+    }
+
+    .skill-item h3 {
+        font-size: 23px;
+    }
+
+    .skill-item h4 {
+        font-size: 19px;
     }
 
     .project-list {
