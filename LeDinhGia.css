@@ -61,7 +61,7 @@ nav a:hover {
     justify-content: space-between;
     padding: 75px 12%;
     gap: 50px;
-    background: linear-gradient(135deg, #f5f6ff, #e9eaff);
+    background: linear-gradient(135deg, #f5f6ff 0%, #e9eaff 100%);
 }
 
 .content {
@@ -154,9 +154,11 @@ nav a:hover {
 }
 
 /* KỸ NĂNG */
-.skill {
+.skill,
+.skills,
+#skills {
     padding: 85px 8%;
-    background: linear-gradient(135deg, #f5f6ff, #e9eaff);
+    background: linear-gradient(135deg, #f5f6ff 0%, #e9eaff 100%) !important;
 }
 
 .skill-list {
@@ -407,6 +409,8 @@ footer p {
     }
 
     .skill,
+    .skills,
+    #skills,
     .project,
     .contact {
         padding: 60px 6%;
